@@ -1,0 +1,29 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/User/GetAllUsers",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44328"
+        }
+      ],
+      "UpstreamPathTemplate": "/GetAllUsers"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Product/GetAllProducts",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "44390"
+        }
+      ],
+      "UpstreamPathTemplate": "/GetAllProducts"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:44334/"
+  }
+}
